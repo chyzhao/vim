@@ -74,15 +74,16 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
-"Bundle 'taglist.vim'
 Bundle 'majutsushi/tagbar'
+Bundle 'godlygeek/tabular'
+Bundle 'plasticboy/vim-markdown'
 
 filetype plugin indent on
 
 "以下是vim快捷键配置
 "nerdtree 绑定到Ctrl+F
 nmap <C-f> :NERDTree<CR>
-"TlistToggle to Ctrl+T"
+"TagbarToggle to Ctrl+T"
 nmap <C-t> :TagbarToggle<CR>
 
 "为golang配置tagbar
@@ -113,3 +114,6 @@ let g:tagbar_type_go = {
     \ 'ctagsbin'  : 'gotags',
     \ 'ctagsargs' : '-sort -silent'
 	\ }
+
+"配置markdown
+let g:vim_markdown_frontmatter=1
