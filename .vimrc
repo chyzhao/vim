@@ -63,7 +63,7 @@ set showmode        " 命令行显示vim当前模式
 
 "--find setting--
 set incsearch        " 输入字符串就显示匹配点
-set hlsearch   
+set hlsearch 
 
 "以下是vim插件的安装列表
 set nocompatible
@@ -77,6 +77,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'majutsushi/tagbar'
 Bundle 'godlygeek/tabular'
 Bundle 'plasticboy/vim-markdown'
+Bundle 'fatih/vim-go'
 
 filetype plugin indent on
 
