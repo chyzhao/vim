@@ -78,6 +78,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'godlygeek/tabular'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'fatih/vim-go'
+Bundle 'scrooloose/syntastic'
 
 filetype plugin indent on
 
@@ -118,3 +119,16 @@ let g:tagbar_type_go = {
 
 "配置markdown
 let g:vim_markdown_frontmatter=1
+
+"配置syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+"之前需要sudo pip install flake8
+let g:syntastic_python_checkers=['flake8']
